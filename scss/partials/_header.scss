@@ -15,10 +15,16 @@
   }
 
   a {
-    color: $dark-blue;
+    color: $black;
 
     &:hover {
-      color: $medium-blue;
+      @include media-breakpoint-down(sm) {
+        color: $white;
+      }
+      
+      @include media-breakpoint-up(md) {
+        color: $red;
+      }
     }
   }
 }
@@ -27,12 +33,12 @@
   text-align: right;
 
   @include media-breakpoint-down(sm) {
-    background: $dark-blue;
+    background: $yellow;
   }
 
   @include media-breakpoint-up(md) {
-    background: $white;
-    background: linear-gradient(0deg, $white 0%, $white 50%, $light-blue 50%, $light-blue 100%);
+    background: $yellow;
+    background: linear-gradient(0deg, $white 0%, $white 50%, $yellow 50%, $yellow 100%);
   }
 
   ul {
@@ -51,7 +57,7 @@
       text-transform: uppercase;
 
       &:hover {
-        background: darken($medium-blue, 10%);
+        background: darken($red, 10%);
         color: $white;
       }
 
@@ -61,7 +67,7 @@
       }
 
       @include media-breakpoint-up(md) {
-        background: $medium-blue;
+        background: $red;
         padding-left: 25px;
         padding-right: 25px;
       }
@@ -70,10 +76,10 @@
     &:last-child {
       a {
         @include media-breakpoint-up(md) {
-          background: $dark-blue;
+          background: $dark-red;
 
           &:hover {
-            background: darken($dark-blue, 10%);
+            background: darken($dark-red, 5%);
           }
         }
       }
@@ -85,7 +91,7 @@
 
   .logo {
     height: auto;
-    width: 225px;
+    width: 180px;
   }
 
   .textwidget {
@@ -101,14 +107,21 @@
 
         @include media-breakpoint-down(sm) {
           color: $white;
-
-          &:hover {
-            color: $medium-blue;
+          
+          &:before {
+            background: url(../img/icon-phone-white.png) center center no-repeat;
+          }
+        }
+        
+        @include media-breakpoint-up(md) {
+          color: $red;
+          
+          &:before {
+            background: url(../img/icon-phone-red.png) center center no-repeat;
           }
         }
 
         &:before {
-          background: url(../img/icon-phone.png) center center no-repeat;
           background-size: contain;
           content: '';
           height: 25px;

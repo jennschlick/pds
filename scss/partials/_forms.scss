@@ -30,7 +30,7 @@ form {
   input[type="week"],
   textarea {
     background: $white;
-    border: 2px solid $light-blue;
+    border: 2px solid $light-gray;
     color: $default-font-color;
     display: block;
     font-family: $default-font-family;
@@ -41,7 +41,7 @@ form {
     width: 100%;
 
     &:focus {
-      border-color: $medium-blue;
+      border-color: $red;
       outline: 0;
     }
   }
@@ -67,7 +67,7 @@ form {
     }
 
     &.wpcf7-mail-sent-ok {
-      background: $dark-blue;
+      background: $red;
       color: $white;
       padding: ($spacer / 2) ($spacer);
     }

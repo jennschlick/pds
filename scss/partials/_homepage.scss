@@ -4,6 +4,7 @@
 
 .home-section {
   h1, h2, h3, h4 {
+    color: $red;
     margin-top: 0;
   }
 
@@ -34,6 +35,7 @@
   }
 
   h2 {
+    color: $white;
     margin-bottom: ($spacer * 3);
 
     @include media-breakpoint-up(md) {
@@ -42,6 +44,7 @@
   }
 
   h3 {
+    color: $white;
     font-weight: normal;
     margin-bottom: ($spacer / 2);
 
@@ -77,10 +80,12 @@
   color: $white;
 
   h2 {
+    color: $white;
     font-size: 47px;
   }
 
   h3 {
+    color: $white;
     font-size: 16px;
     font-weight: normal;
     margin-bottom: ($spacer / 2);
@@ -88,16 +93,14 @@
   }
 
   h4 {
+    color: $black;
     font-size: 17px;
     margin-bottom: ($spacer / 2);
     text-transform: uppercase;
   }
 
-  p {
-    margin: 0;
-  }
-
   a {
+    border-bottom-color: $white;
     color: $white;
 
     img {
@@ -115,7 +118,7 @@
 }
 
 .home-section-3-col-1 {
-  background: $dark-blue;
+  background: $red;
 
   > div {
     @include media-breakpoint-up(md) {
@@ -125,7 +128,8 @@
 }
 
 .home-section-3-col-2 {
-  background: $medium-blue;
+  background: $light-gray;
+  color: $black;
 
   img {
     max-height: 55px;
@@ -141,8 +145,6 @@
 }
 
 .home-section-4 {
-  background: $light-blue;
-
   h3 {
     font-size: 17px;
     margin-bottom: ($spacer);

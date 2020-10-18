@@ -34,7 +34,7 @@
       padding-bottom: 15px;
 
       &:hover {
-        background: $light-blue;
+        background: $light-gray;
         color: $default-font-color;
       }
 
@@ -45,7 +45,7 @@
 
     .responsive-tabs__heading--active {
       &, &:hover {
-        background: $dark-blue;
+        background: $red;
         color: $white;
 
         &:after {

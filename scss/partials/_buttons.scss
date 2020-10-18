@@ -7,7 +7,7 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-  background: $orange;
+  background: $red;
   border: 0;
   color: $white;
   display: inline-block;
@@ -21,15 +21,19 @@ input[type="submit"] {
   }
 
   &:hover {
-    background: darken($orange, 10%);
+    background: darken($red, 10%);
   }
 }
 
 .btn-text {
-  border-bottom: 4px solid $medium-blue;
-  color: $dark-blue;
+  border-bottom: 4px solid $red;
+  color: $black;
   display: inline-block;
   font-size: 15px;
   font-weight: 900;
   text-transform: uppercase;
+  
+  &:hover {
+    border-bottom-color: darken($red, 10%);
+  }
 }

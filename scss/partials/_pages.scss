@@ -10,8 +10,7 @@
 
 article {
   header {
-    background: $dark-blue;
-    color: $white;
+    background: $light-gray;
 
     @include media-breakpoint-up(md) {
       position: relative;
@@ -81,14 +80,14 @@ article {
           }
 
           a {
-            border-bottom: 4px solid $medium-blue;
-            color: $dark-blue;
+            border-bottom: 4px solid $red;
+            color: $black;
             font-size: 15px;
             font-weight: 900;
             text-transform: uppercase;
 
             &:hover {
-              color: $medium-blue;
+              border-bottom-color: darken($red, 10%);
             }
           }
         }
@@ -99,7 +98,7 @@ article {
 
 .page-id-22 {
   h2 {
-    background: $light-blue;
+    background: $light-gray;
     margin-bottom: 0;
     padding: ($spacer) ($spacer * 1.5) ($spacer / 1.5) ($spacer * 1.5);
 

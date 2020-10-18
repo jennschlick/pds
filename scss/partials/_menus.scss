@@ -15,7 +15,7 @@
     }
 
     @include media-breakpoint-up(md) {
-      background: $medium-blue;
+      background: $red;
       color: $white;
       display: none;
       min-width: 250px;
@@ -55,8 +55,12 @@
       }
 
       &:hover {
+        @include media-breakpoint-down(sm) {
+          color: $white;
+        }
+        
         @include media-breakpoint-up(md) {
-          background: darken($medium-blue, 10%);
+          background: darken($red, 10%);
         }
       }
     }
@@ -69,7 +73,7 @@
     }
 
     @include media-breakpoint-up(md) {
-      margin-left: 40px;
+      margin-left: 50px;
       margin-right: auto;
     }
   }
@@ -86,7 +90,7 @@
       position: relative;
 
       &:not(:last-child) {
-        margin-right: 15px;
+        margin-right: 50px;
       }
 
       &:active,
@@ -119,7 +123,7 @@
   	z-index: 200;
 
   	span {
-      background: $dark-blue;
+      background: $red;
   		display: block;
       float: left;
   		height: 2px;
@@ -174,7 +178,7 @@
 
       &:hover {
         span {
-          background: $medium-blue;
+          background: $white;
         }
       }
   	}
@@ -190,7 +194,7 @@
 
 .main-menu-wrapper {
   @include media-breakpoint-down(sm) {
-    background: $dark-blue;
+    background: $black;
     height: 100vh;
     padding: ($spacer * 2);
     position: fixed;

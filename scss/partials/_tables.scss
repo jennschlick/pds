@@ -8,7 +8,7 @@ table {
   }
 
   thead {
-    background: $light-blue;
+    background: $light-gray;
   }
 
   tr {
@@ -25,12 +25,12 @@ table {
     &:not(:last-of-type) {
       td, th {
         @include media-breakpoint-up(md) {
-          border-bottom: 1px solid $medium-blue;
+          border-bottom: 1px solid $yellow;
         }
       }
 
       @include media-breakpoint-down(sm) {
-        border-bottom: 1px solid $medium-blue;
+        border-bottom: 1px solid $yellow;
       }
     }
   }
