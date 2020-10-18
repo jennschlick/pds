@@ -3,7 +3,7 @@
 /* Script and style functions
 /*-----------------------------------------------------------------------------------*/
 
-function landair_styles_scripts()  {
+function pds_styles_scripts()  {
 	// Deregister scripts
 	wp_deregister_script( 'wp-embed' );
 
@@ -16,10 +16,10 @@ function landair_styles_scripts()  {
 	// Enqueue styles
 	wp_enqueue_style( 'styles', get_template_directory_uri() . '/css/styles.css' );
 }
-add_action( 'wp_enqueue_scripts', 'landair_styles_scripts' );
+add_action( 'wp_enqueue_scripts', 'pds_styles_scripts' );
 
 // Disable emojis
-function landair_disable_emojis() {
+function pds_disable_emojis() {
 	remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
 	remove_action( 'admin_print_scripts', 'print_emoji_detection_script' );
 	remove_action( 'wp_print_styles', 'print_emoji_styles' );
@@ -29,7 +29,7 @@ function landair_disable_emojis() {
 	remove_filter( 'wp_mail', 'wp_staticize_emoji_for_email' );
 	add_filter( 'tiny_mce_plugins', 'disable_emojis_tinymce' );
 }
-add_action( 'init', 'landair_disable_emojis' );
+add_action( 'init', 'pds_disable_emojis' );
 
 function disable_emojis_tinymce( $plugins ) {
 	if ( is_array( $plugins ) ) {
@@ -40,7 +40,7 @@ function disable_emojis_tinymce( $plugins ) {
 }
 
 // Disable oEmbed
-function landair_disable_embeds_code_init() {
+function pds_disable_embeds_code_init() {
  remove_action( 'rest_api_init', 'wp_oembed_register_route' );
  add_filter( 'embed_oembed_discover', '__return_false' );
  remove_filter( 'oembed_dataparse', 'wp_filter_oembed_result', 10 );
@@ -50,7 +50,7 @@ function landair_disable_embeds_code_init() {
  add_filter( 'rewrite_rules_array', 'disable_embeds_rewrites' );
  remove_filter( 'pre_oembed_result', 'wp_filter_pre_oembed_result', 10 );
 }
-add_action( 'init', 'landair_disable_embeds_code_init', 9999 );
+add_action( 'init', 'pds_disable_embeds_code_init', 9999 );
 
 function disable_embeds_tiny_mce_plugin($plugins) {
   return array_diff($plugins, array('wpembed'));

@@ -5,8 +5,8 @@
 
 register_nav_menus(
 	array(
-		'top'	=>	__( 'Top Menu', 'landair' ),
-		'main'	=>	__( 'Main Menu', 'landair' ),
-		'footer'	=>	__( 'Footer Menu', 'landair' ),
+		'top'	=>	__( 'Top Menu', 'pds' ),
+		'main'	=>	__( 'Main Menu', 'pds' ),
+		'footer'	=>	__( 'Footer Menu', 'pds' ),
 	)
 );

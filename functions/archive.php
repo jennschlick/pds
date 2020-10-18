@@ -4,7 +4,7 @@
 /*-----------------------------------------------------------------------------------*/
 
 // Remove labels from `get_the_archive_title()`
-function landair_archive_title( $title ) {
+function pds_archive_title( $title ) {
     if ( is_category() ) {
         $title = single_cat_title( '', false );
     } elseif ( is_tag() ) {
@@ -18,4 +18,4 @@ function landair_archive_title( $title ) {
     }
     return $title;
 }
-add_filter( 'get_the_archive_title', 'landair_archive_title' );
+add_filter( 'get_the_archive_title', 'pds_archive_title' );

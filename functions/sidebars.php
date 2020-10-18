@@ -3,7 +3,7 @@
 /* Sidebar functions
 /*-----------------------------------------------------------------------------------*/
 
-function landair_register_sidebars() {
+function pds_register_sidebars() {
 	register_sidebar(array(
 		'id' => 'header',
 		'name' => 'Header',
@@ -48,4 +48,4 @@ function landair_register_sidebars() {
 		'empty_title'=> '',
 	));
 }
-add_action( 'widgets_init', 'landair_register_sidebars' );
+add_action( 'widgets_init', 'pds_register_sidebars' );
