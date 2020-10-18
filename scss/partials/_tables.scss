@@ -1,0 +1,37 @@
+/*-----------------------------------------------------------------------------------*/
+/* Tables
+/*-----------------------------------------------------------------------------------*/
+
+table {
+  &, td, th {
+    border: 0;
+  }
+
+  thead {
+    background: $light-blue;
+  }
+
+  tr {
+    td, th {
+      padding: ($spacer * 1.5);
+      vertical-align: top;
+
+      @include media-breakpoint-down(sm) {
+        display: block;
+        width: 100% !important;
+      }
+    }
+
+    &:not(:last-of-type) {
+      td, th {
+        @include media-breakpoint-up(md) {
+          border-bottom: 1px solid $medium-blue;
+        }
+      }
+
+      @include media-breakpoint-down(sm) {
+        border-bottom: 1px solid $medium-blue;
+      }
+    }
+  }
+}

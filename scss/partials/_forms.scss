@@ -1,0 +1,103 @@
+/*-----------------------------------------------------------------------------------*/
+/* Forms
+/*-----------------------------------------------------------------------------------*/
+
+form {
+  label {
+    display: block;
+    margin-bottom: ($spacer / 2.5);
+  }
+
+  p {
+    margin: 0;
+  }
+
+  span.required {
+    color: #f00;
+  }
+
+  input[type="date"],
+  input[type="datetime-local"],
+  input[type="email"],
+  input[type="month"],
+  input[type="number"],
+  input[type="password"],
+  input[type="search"],
+  input[type="tel"],
+  input[type="text"],
+  input[type="time"],
+  input[type="url"],
+  input[type="week"],
+  textarea {
+    background: $white;
+    border: 2px solid $light-blue;
+    color: $default-font-color;
+    display: block;
+    font-family: $default-font-family;
+    font-size: $default-font-size;
+    line-height: $default-line-height;
+    max-width: 400px;
+    padding: ($spacer / 2);
+    width: 100%;
+
+    &:focus {
+      border-color: $medium-blue;
+      outline: 0;
+    }
+  }
+
+  textarea {
+    max-width: 100%;
+  }
+
+  .wpcf7-not-valid-tip {
+    display: block;
+    margin-top: ($spacer / 2.5);
+  }
+
+  .wpcf7-response-output {
+    border: 0;
+    margin: ($spacer) 0 0 0;
+    padding: 0;
+
+    &.wpcf7-validation-errors {
+      background: #f00;
+      color: $white;
+      padding: ($spacer / 2) ($spacer);
+    }
+
+    &.wpcf7-mail-sent-ok {
+      background: $dark-blue;
+      color: $white;
+      padding: ($spacer / 2) ($spacer);
+    }
+  }
+}
+
+.form-group {
+  margin-bottom: ($spacer * 1.5);
+}
+
+.wpcf7-form-control.wpcf7-checkbox {
+  .wpcf7-list-item {
+    display: block;
+    line-height: 1;
+    margin-left: 0;
+    margin-bottom: ($spacer / 1.5);
+
+    &.first {
+      margin-top: ($spacer / 1.5);
+    }
+
+    label {
+      cursor: pointer;
+      display: inline-block;
+    }
+
+    input[type="checkbox"],
+    input[type="radio"] {
+      margin-right: ($spacer / 4);
+      vertical-align: text-top;
+    }
+  }
+}

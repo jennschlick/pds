@@ -1,0 +1,57 @@
+/*-----------------------------------------------------------------------------------*/
+/* Tabs
+/*-----------------------------------------------------------------------------------*/
+
+.container .responsive-tabs {
+  .responsive-tabs__list {
+    .responsive-tabs__list__item {
+      font-size: $default-font-size;
+      padding-left: 20px;
+      padding-top: 15px;
+      padding-right: 20px;
+
+      &:hover {
+        color: $default-font-color;
+      }
+    }
+
+    .responsive-tabs__list__item--active {
+      color: $default-font-color;
+    }
+  }
+
+  .responsive-tabs__panel {
+    padding: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .container .responsive-tabs {
+    .responsive-tabs__heading {
+      color: $default-font-color;
+      font-size: $default-font-size;
+      padding-top: 20px;
+      padding-bottom: 15px;
+
+      &:hover {
+        background: $light-blue;
+        color: $default-font-color;
+      }
+
+      &:after {
+        top: 25px;
+      }
+    }
+
+    .responsive-tabs__heading--active {
+      &, &:hover {
+        background: $dark-blue;
+        color: $white;
+
+        &:after {
+          top: 25px;
+        }
+      }
+    }
+  }
+}

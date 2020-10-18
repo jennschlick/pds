@@ -1,0 +1,30 @@
+/*-----------------------------------------------------------------------------------*/
+/* Styles
+/*-----------------------------------------------------------------------------------*/
+
+// Bootstrap
+// v4.4.1
+@import 'bootstrap/bootstrap';
+
+// Utilities
+@import 'partials/normalize';
+@import 'partials/reset';
+@import 'partials/fonts';
+@import 'partials/variables';
+
+// Typography
+@import 'partials/typography';
+
+// Components
+@import 'partials/buttons';
+@import 'partials/footer';
+@import 'partials/forms';
+@import 'partials/header';
+@import 'partials/map';
+@import 'partials/menus';
+@import 'partials/tables';
+@import 'partials/tabs';
+
+// Pages
+@import 'partials/homepage';
+@import 'partials/pages';

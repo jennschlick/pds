@@ -1,0 +1,24 @@
+/*-----------------------------------------------------------------------------------*/
+/* Fonts
+/*-----------------------------------------------------------------------------------*/
+
+@font-face {
+  font-family: 'Avenir LT Std';
+  src: url('../AvenirLTStd-Roman.woff2') format('woff2'), url('../AvenirLTStd-Roman.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+// @font-face {
+//   font-family: 'Avenir LT Std';
+//   src: url('../AvenirLTStd-Medium.woff2') format('woff2'), url('../AvenirLTStd-Medium.woff') format('woff');
+//   font-weight: 500;
+//   font-style: normal;
+// }
+
+@font-face {
+  font-family: 'Avenir LT Std';
+  src: url('../fonts/AvenirLTStd-Heavy.woff2') format('woff2'), url('../AvenirLTStd-Heavy.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+}

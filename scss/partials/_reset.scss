@@ -1,0 +1,25 @@
+/*-----------------------------------------------------------------------------------*/
+/* Reset
+/*-----------------------------------------------------------------------------------*/
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  position: relative;
+}
+
+:target {
+  &:before {
+    display: block;
+    content: '';
+    margin-top: -50px;
+    height: 50px;
+    visibility: hidden;
+    pointer-events: none;
+  }
+}

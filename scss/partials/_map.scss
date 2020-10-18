@@ -1,0 +1,50 @@
+/*-----------------------------------------------------------------------------------*/
+/* Map
+/*-----------------------------------------------------------------------------------*/
+
+#map {
+  display: block;
+  margin: 0 auto;
+  max-width: 450px;
+  overflow: visible;
+}
+
+#tooltip {
+  visibility: hidden;
+
+  @include media-breakpoint-up(md) {
+    foreignObject {
+      height: 100%;
+      overflow: visible;
+    }
+
+    rect {
+      fill: $dark-blue;
+    }
+  }
+}
+
+.tooltip-group {
+  @include media-breakpoint-up(md) {
+    &:active,
+    &:focus,
+    &:hover {
+      #tooltip {
+        visibility: visible;
+      }
+    }
+  }
+}
+
+.tooltip-content {
+  @include media-breakpoint-up(md) {
+    color: $white;
+    font-size: 9px;
+
+    strong {
+      display: block;
+      margin-bottom: ($spacer / 3);
+      text-transform: uppercase;
+    }
+  }
+}

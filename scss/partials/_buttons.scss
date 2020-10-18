@@ -1,0 +1,35 @@
+/*-----------------------------------------------------------------------------------*/
+/* Buttons
+/*-----------------------------------------------------------------------------------*/
+
+.btn,
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  background: $orange;
+  border: 0;
+  color: $white;
+  display: inline-block;
+  font-size: 15px;
+  line-height: 1;
+  padding: 18px ($grid-gutter-width) ($grid-gutter-width / 2) ($grid-gutter-width);
+  text-transform: uppercase;
+
+  &, &:hover {
+    color: $white;
+  }
+
+  &:hover {
+    background: darken($orange, 10%);
+  }
+}
+
+.btn-text {
+  border-bottom: 4px solid $medium-blue;
+  color: $dark-blue;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 900;
+  text-transform: uppercase;
+}

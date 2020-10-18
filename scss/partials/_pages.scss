@@ -1,0 +1,141 @@
+/*-----------------------------------------------------------------------------------*/
+/* Pages
+/*-----------------------------------------------------------------------------------*/
+
+.container {
+  *:last-child {
+    margin-bottom: 0;
+  }
+}
+
+article {
+  header {
+    background: $dark-blue;
+    color: $white;
+
+    @include media-breakpoint-up(md) {
+      position: relative;
+    }
+
+    h1 {
+      margin-bottom: 0;
+    }
+
+    p {
+      margin-top: ($spacer / 2);
+      margin-bottom: 0;
+    }
+
+    .container {
+      &:first-of-type {
+        @include media-breakpoint-up(md) {
+          position: absolute;
+            top: 50%;
+            left: 50%;
+          transform: translate(-50%, -50%);
+          z-index: 1;
+        }
+      }
+    }
+
+    .container-fluid {
+      div[class*="col"] {
+        &:last-of-type {
+          padding-left: 0;
+          padding-right: 0;
+        }
+      }
+    }
+  }
+
+  > .container {
+    > .row {
+      > div:last-child {
+        @include media-breakpoint-up(md) {
+          padding-left: ($spacer * 3);
+        }
+
+        h3 {
+          font-size: 26px;
+        }
+
+        > div {
+          > div {
+            &:not(:last-child) {
+              margin-bottom: ($spacer * 2);
+            }
+          }
+        }
+
+        ul.menu {
+          &, li {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+          }
+
+          li {
+            &:not(:last-child) {
+              margin-bottom: ($spacer * 1.5);
+            }
+          }
+
+          a {
+            border-bottom: 4px solid $medium-blue;
+            color: $dark-blue;
+            font-size: 15px;
+            font-weight: 900;
+            text-transform: uppercase;
+
+            &:hover {
+              color: $medium-blue;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.page-id-22 {
+  h2 {
+    background: $light-blue;
+    margin-bottom: 0;
+    padding: ($spacer) ($spacer * 1.5) ($spacer / 1.5) ($spacer * 1.5);
+
+    &:not(:first-of-type) {
+      margin-top: 0;
+    }
+  }
+
+  table {
+    margin-bottom: 0;
+
+    h3 {
+      font-size: $default-font-size;
+      text-transform: uppercase;
+    }
+
+    tr {
+      td, th {
+        p {
+          margin: 0;
+        }
+
+        &:last-child {
+          font-size: 13px;
+          font-weight: 900;
+          text-transform: uppercase;
+
+          @include media-breakpoint-down(sm) {
+            padding-top: 0;
+          }
+
+          @include media-breakpoint-up(md) {
+            text-align: right;
+          }
+        }
+      }
+    }
+  }
+}
