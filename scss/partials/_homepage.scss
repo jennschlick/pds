@@ -35,24 +35,25 @@
   }
 
   h2 {
-    color: $white;
     margin-bottom: ($spacer * 3);
 
     @include media-breakpoint-up(md) {
+      color: $white;
       font-size: 57px;
     }
   }
 
   h3 {
-    color: $white;
     font-weight: normal;
     margin-bottom: ($spacer / 2);
 
     @include media-breakpoint-down(sm) {
+      color: $black;
       font-size: $default-font-size;
     }
 
     @include media-breakpoint-up(md) {
+      color: $white;
       font-size: 22px;
     }
   }
