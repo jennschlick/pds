@@ -31,12 +31,12 @@
 					<div class="container">
 	  				<div class="row align-items-lg-center justify-content-center">
 							<?php if (get_field('home_section_2_image')) {?>
-								<div class="col-md-5">
+								<div class="col-md-2">
 									<?php if (get_field('home_section_2_image_link')) {?><a href="<?php the_field('home_section_2_image_link');?>"><?php }?><img src="<?php the_field('home_section_2_image');?>" class="img-fluid mx-auto d-block mb-5 mb-md-0" alt=""><?php if (get_field('home_section_2_image_link')) {?></a><?php }?>
 								</div>
 							<?php }?>
 							<?php if (get_field('home_section_2_content')) {?>
-								<div class="col-md-4">
+								<div class="col-md-7">
 									<?php the_field('home_section_2_content');?>
 								</div>
 							<?php }?>
@@ -156,7 +156,7 @@
 			<?php }?>
 
 			<?php if (get_field('home_section_5_image') || get_field('home_section_5_content')) {?>
-				<div class="home-section home-section-5 py-6">
+				<div class="home-section home-section-5 pt-6">
 					<div class="container-fluid">
 						<div class="row justify-content-center">
 							<?php if (get_field('home_section_5_image')) {?>
@@ -175,7 +175,7 @@
 			<?php }?>
 
 			<?php if (get_field('home_section_6_title') || get_field('home_section_6_column_1_content') || get_field('home_section_6_column_2_content')) {?>
-				<div class="home-section home-section-6 pb-6 text-center">
+				<div class="home-section home-section-6 py-6 text-center">
 					<?php if (get_field('home_section_6_title')) {?>
 						<h2><?php the_field('home_section_6_title');?></h2>
 					<?php }?>
