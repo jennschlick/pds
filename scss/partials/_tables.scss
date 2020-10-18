@@ -25,12 +25,12 @@ table {
     &:not(:last-of-type) {
       td, th {
         @include media-breakpoint-up(md) {
-          border-bottom: 1px solid $yellow;
+          border-bottom: 1px solid $light-gray;
         }
       }
 
       @include media-breakpoint-down(sm) {
-        border-bottom: 1px solid $yellow;
+        border-bottom: 1px solid $light-gray;
       }
     }
   }
