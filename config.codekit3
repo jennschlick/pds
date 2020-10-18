@@ -215,8 +215,8 @@
 		"oA": 0,
 		"oAP": "/img/icon-facebook.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -231,11 +231,22 @@
 		"oT": 1,
 		"q": 100
 		},
-	"/img/icon-phone.png": {
+	"/img/icon-phone-red.png": {
 		"ft": 32768,
 		"iS": 1656,
 		"oA": 0,
-		"oAP": "/img/icon-phone.png",
+		"oAP": "/img/icon-phone-red.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/icon-phone-white.png": {
+		"ft": 32768,
+		"iS": 2285,
+		"oA": 0,
+		"oAP": "/img/icon-phone-white.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -248,16 +259,16 @@
 		"oA": 0,
 		"oAP": "/img/icon-quote.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
-	"/img/landair-logo.png": {
+	"/img/pds-logo.png": {
 		"ft": 32768,
-		"iS": 62190,
+		"iS": 56568,
 		"oA": 0,
-		"oAP": "/img/landair-logo.png",
+		"oAP": "/img/pds-logo.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -282,14 +293,6 @@
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
-		},
-	"/map.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/map.php",
-		"oF": 0
 		},
 	"/page-43.php": {
 		"cB": 0,
@@ -1557,19 +1560,6 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/scss/partials/_homepage.css",
-		"oF": 0,
-		"oS": 0,
-		"sct": 1
-		},
-	"/scss/partials/_map.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"ec": 1,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/scss/partials/_map.css",
 		"oF": 0,
 		"oS": 0,
 		"sct": 1
