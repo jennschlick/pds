@@ -36,8 +36,8 @@
   <?php wp_nav_menu(array('theme_location' => 'top', 'container' => '')); ?>
 </div>
 
-<div class="header d-flex align-items-center justify-content-between px-3 py-4 px-md-5 pb-md-5">
-  <a href="<?php echo site_url(); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/landair-logo.png" alt="<?php echo get_bloginfo('name'); ?>" class="logo"></a>
+<div class="header d-flex align-items-center justify-content-between px-3 pt-2 px-md-5 pb-3 pb-md-4">
+  <a href="<?php echo site_url(); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/pds-logo.png" alt="<?php echo get_bloginfo('name'); ?>" class="logo"></a>
 
   <input type="checkbox" id="main-menu-toggle-checkbox" />
   <label for="main-menu-toggle-checkbox" class="main-menu-toggle">
