@@ -291,20 +291,12 @@
 		"oAP": "/map.php",
 		"oF": 0
 		},
-	"/page-16.php": {
+	"/page-43.php": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/page-16.php",
-		"oF": 0
-		},
-	"/page-22.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/page-22.php",
+		"oAP": "/page-43.php",
 		"oF": 0
 		},
 	"/page-full.php": {
